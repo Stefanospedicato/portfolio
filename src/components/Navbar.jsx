@@ -7,10 +7,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-50 mb-10">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to={"/home"} className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-          STEFANO SPEDICATO
+          JUNIOR DEVELOPER
         </Link>
         {/* Bottone Hamburger */}
         <button
