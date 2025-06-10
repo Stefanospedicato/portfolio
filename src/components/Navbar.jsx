@@ -24,12 +24,12 @@ export default function Navbar() {
         </button>
         {/* Menu Navigazione */}
         <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:border-0 md:bg-white md:space-x-2">
             {["Home", "About", "Contatti", "Progetti"].map((item) => (
               <li key={item}>
                 <Link
                   to={`/${item.toLowerCase()}`}
-                  className="relative block py-2 px-3 text-black mb-3 md:mb-0 rounded-sm before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-700 before:ease-in-out hover:before:w-full hover:text-white uppercase"
+                  className="relative block py-2 px-4 text-black mb-3 md:mb-0 rounded-sm before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-700 before:ease-in-out hover:before:w-full hover:text-white uppercase"
                   onClick={() => setIsOpen(false)}>
                   <span className="relative z-10">{item}</span>
                 </Link>
