@@ -52,4 +52,37 @@ const tech = [
   },
 ];
 
-export { tech };
+const contacts = [
+  {
+    id: 1,
+    name: "Gmail",
+    contact: "stefano.spedicato11@gmail.com",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png",
+  },
+  {
+    id: 2,
+    name: "LinkedIn",
+    contact: "https://www.linkedin.com/in/stefano-spedicato-59b441127/",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png",
+  },
+  {
+    id: 4,
+    name: "Whatsapp",
+    contact: "+393335694685",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png",
+  },
+  {
+    id: 3,
+    name: "GitHub",
+    contact: "https://github.com/Stefanospedicato",
+    icon: "https://www.svgrepo.com/show/475654/github-color.svg",
+  },
+  {
+    id: 5,
+    name: "Cellulare",
+    contact: "+393335694685",
+    icon: "https://www.svgrepo.com/show/13641/phone-call.svg",
+  },
+];
+
+export { tech, contacts };
