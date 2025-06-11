@@ -8,6 +8,7 @@ const About = () => {
       <div className="w-full xl:w-[50%] h-screen flex flex-col items-center text-center justify-center xl:overflow-auto px-20">
         <p className="text-8xl font-bold mb-10 xl:text-8xl flex-shrink-0">SU DI ME</p>
         <RoundedImage />
+        <span className="h-[10px] bg-black w-[100px] mb-5 transition-all duration-500 ease-in-out hover:w-[300px] rounded mx-auto hidden xl:block"></span>
         <div className="overflow-auto flex-grow mt-5">
           <p className="description">"Dopo anni di esperienza in settori diversi dalla programmazione, ho deciso di seguire la mia vera passione: il <strong>DEVELOPMENT</strong>.</p>
           <p className="description">Questo cambiamento mi ha portato a intraprendere un percorso di formazione intenso e stimolante, culminato nella <strong>Boolean Academy</strong>, dove ho affinato le mie competenze nel corso <strong>Full-Stack Development</strong>, approfondendo tecnologie moderne e strumenti essenziali per lo sviluppo web.</p>
