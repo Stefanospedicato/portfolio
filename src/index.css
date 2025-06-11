@@ -14,20 +14,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .cool-button {
   transition: all 0.4s ease-in-out;
   font-size: 1.25rem;
   padding: 20px;
-  border: 3px solid #d1d5db;
-  border-radius: 8px;
+  border: 3px solid #000000;
+  transition: all 0.3s ease-in-out;
   background-color: black;
   color: white;
+  font-size: 1.5rem;
 }
 
 .cool-button:hover {
   background-color: white;
   color: black;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 2rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-style: italic;
 }
