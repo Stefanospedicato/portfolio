@@ -1,7 +1,7 @@
 const ImageSection = () => {
   return (
-    <div className="w-full xl:w-[50%] h-screen items-center justify-center xl:block hidden">
-      <div className="w-full h-full overflow-hidden relative">
+    <div className="w-full xl:w-[50%] h-screen relative top-[-150px] hidden xl:block">
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
         <img
           src="/io-bn.jpg"
           alt="io"
@@ -9,7 +9,7 @@ const ImageSection = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ImageSection
+export default ImageSection;

@@ -12,13 +12,13 @@ const Homepage = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center p-3 overflow-hidden"
+          className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center p-3 overflow-hidden pb-36"
         >
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-            className="text-4xl font-bold mb-10 xl:text-9xl flex-shrink-0"
+            className="text-4xl font-bold mb-10 xl:text-8xl flex-shrink-0"
           >
             STEFANO SPEDICATO
           </motion.p>
@@ -44,7 +44,7 @@ const Homepage = () => {
             transition={{ duration: 1, ease: "easeOut", delay: 0.7 }}
             className="w-full max-w-md"
           >
-            <Link to={"/about"}><button className="cool-button mt-10 w-full">INFO</button></Link>
+            <Link to={"/storia"}><button className="cool-button mt-10 w-full">INFO</button></Link>
             <Link to={"/progetti"}><button className="cool-button mt-10 w-full">PROGETTI</button></Link>
             <Link to={"/contatti"}><button className="cool-button mt-10 w-full">CONTATTAMI</button></Link>
             <button className="cool-button mt-10 w-full">

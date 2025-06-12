@@ -17,7 +17,7 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center xl:px-20 xl:pt-40"
+          className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center xl:px-20 xl:pt-40 xl:relative xl:top-[-60px]"
         >
           {/* Titolo */}
           <motion.p
@@ -55,18 +55,8 @@ const About = () => {
             initial={{ opacity: 0, width: "100px" }}
             whileHover={{ width: "300px" }}
             transition={{ duration: 0.5 }}
-            className="block h-[10px] bg-black w-[100px] mb-5 rounded mx-auto"
+            className="block h-[10px] bg-black w-[100px]  rounded mx-auto"
           ></motion.span>
-
-          {/* Titolo Tecnologie */}
-          <motion.p
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
-            className="text-3xl font-bold mb-10 xl:text-3xl mt-10"
-          >
-            TECNOLOGIE
-          </motion.p>
 
           {/* Lista Tecnologie Animata */}
           <motion.ul

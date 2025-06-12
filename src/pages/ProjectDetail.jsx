@@ -25,15 +25,7 @@ const ProjectDetail = () => {
           transition={{ duration: 1 }}
           className="w-full flex flex-col items-center text-center xl:w-[50%] justify-start xl:mr-10"
         >
-          <p className="text-4xl font-bold mb-10 xl:text-8xl uppercase">{project.name}</p>
-
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <RoundedImage />
-          </motion.div>
+          <p className="text-4xl font-bold mb-10 xl:text-8xl uppercase pt-14 xl:pt-0">{project.name}</p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
