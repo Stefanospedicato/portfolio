@@ -56,16 +56,3 @@
 .contact-card:hover {
   border: 5px solid rgb(0, 0, 0);
 }
-
-/* .project-card {
-  transition: all 0.2s ease-in-out;
-  border: 5px solid rgb(0, 0, 0);
-  padding: 30px;
-  width: 250px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-} */

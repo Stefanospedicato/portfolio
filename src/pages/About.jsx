@@ -1,4 +1,3 @@
-// Import delle dipendenze
 import { motion } from "framer-motion";
 import ImageSection from "../components/ImageSection";
 import RoundedImage from "../components/RoundedImage";
@@ -7,48 +6,49 @@ import { tech } from "../data/data";
 // Componente About
 const About = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center min-h-screen pt-20 xl:flex-row xl:justify-between homepage-section gap-10 pb-28">
+    <div className="w-full xl:h-[1100px] flex items-center justify-center">
+      <section className="w-full flex flex-col xl:flex-row xl:justify-between min-h-screen pt-20 homepage-section gap-10 relative pb-20">
 
-      {/* Sezione Immagine */}
-      <ImageSection />
+        {/* Sezione Immagine */}
+        <ImageSection />
 
-      {/* Sezione Testo Animata */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className="w-full xl:w-[50%] md:h-auto lg:h-screen flex flex-col items-center text-center justify-center xl:overflow-auto px-20 overflow-hidden"
-      >
-
-        {/* Titolo */}
-        <motion.p
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-          className="text-7xl font-bold mb-10 xl:text-8xl flex-shrink-0"
-        >
-          SU DI ME
-        </motion.p>
-
-        {/* Immagine Rotonda */}
-        <RoundedImage />
-
-        {/* Descrizione Animata */}
+        {/* Sezione Testo Animata */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-          className="md:h-auto lg:h-screen lg:overflow-auto flex-grow mt-5"
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center px-20"
         >
-          <p className="description">
-            "Dopo anni di esperienza in settori diversi dalla programmazione, ho deciso di seguire la mia vera passione: il <strong>DEVELOPMENT</strong>."
-          </p>
-          <p className="description">
-            Questo cambiamento mi ha portato a intraprendere un percorso di formazione intenso e stimolante, culminato nella <strong>Boolean Academy</strong>, dove ho affinato le mie competenze nel corso <strong>Full-Stack Development</strong>, approfondendo tecnologie moderne e strumenti essenziali per lo sviluppo web.
-          </p>
-          <p className="description">
-            Ora sono pronto a mettere in gioco le mie conoscenze e la mia determinazione, affrontando nuove sfide e contribuendo a progetti innovativi. Credo nella programmazione come mezzo per <strong>creare, innovare e risolvere problemi</strong>, e sono sempre alla ricerca di opportunità per crescere e migliorare.
-          </p>
+          {/* Titolo */}
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+            className="text-7xl font-bold mb-10 xl:text-8xl"
+          >
+            SU DI ME
+          </motion.p>
+
+          {/* Immagine Rotonda */}
+          <RoundedImage />
+
+          {/* Descrizione Animata */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+            className="mt-5"
+          >
+            <p className="description">
+              "Dopo anni di esperienza in settori diversi dalla programmazione, ho deciso di seguire la mia vera passione: il <strong>DEVELOPMENT</strong>."
+            </p>
+            <p className="description">
+              Questo cambiamento mi ha portato a intraprendere un percorso di formazione intenso e stimolante, culminato nella <strong>Boolean Academy</strong>, dove ho affinato le mie competenze nel corso <strong>Full-Stack Development</strong>, approfondendo tecnologie moderne e strumenti essenziali per lo sviluppo web.
+            </p>
+            <p className="description">
+              Ora sono pronto a mettere in gioco le mie conoscenze e la mia determinazione, affrontando nuove sfide e contribuendo a progetti innovativi. Credo nella programmazione come mezzo per <strong>creare, innovare e risolvere problemi</strong>, e sono sempre alla ricerca di opportunità per crescere e migliorare.
+            </p>
+          </motion.div>
 
           {/* Linea Animata */}
           <motion.span
@@ -63,7 +63,7 @@ const About = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
-            className="text-3xl text-center font-bold mb-10 xl:text-3xl flex-shrink-0 mt-10"
+            className="text-3xl font-bold mb-10 xl:text-3xl mt-10"
           >
             TECNOLOGIE
           </motion.p>
@@ -88,10 +88,9 @@ const About = () => {
             ))}
           </motion.ul>
         </motion.div>
-      </motion.div>
-    </section>
+      </section>
+    </div>
   );
 };
 
-// Esportazione del componente
 export default About;

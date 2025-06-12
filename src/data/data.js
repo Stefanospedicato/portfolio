@@ -21,6 +21,11 @@ const tech = [
     icon: "https://www.svgrepo.com/show/452092/react.svg",
   },
   {
+    id: 9,
+    name: "Vite",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/2078px-Vitejs-logo.svg.png",
+  },
+  {
     id: 4,
     name: "Express.js",
     icon: "https://img.icons8.com/color/512/express-js.png",
@@ -90,7 +95,7 @@ const projects = [
     video: "/public/video-yourcars.mp4",
     repository:
       "https://github.com/Stefanospedicato/progetto-finale-spec-repository-front",
-    technologies: ["CSS", "React.js", "Typescript"],
+    technologies: ["CSS", "React.js", "Vite", "Typescript"],
   },
   {
     id: 2,
@@ -104,9 +109,10 @@ const projects = [
     technologies: [
       "Express.js",
       "Node.js",
-      "CSS",
       "MySQL",
+      "CSS",
       "TailwindCSS",
+      "Vite",
       "React.js",
     ],
   },
@@ -119,7 +125,14 @@ const projects = [
     image: "/public/filmarea-cop.jpeg",
     video: "/public/video-filmarea.mp4",
     repository: "https://github.com/Stefanospedicato/webapp-react",
-    technologies: ["Express.js", "Node.js", "CSS", "Bootstrap", "React.js"],
+    technologies: [
+      "Express.js",
+      "Node.js",
+      "CSS",
+      "Bootstrap",
+      "Vite",
+      "React.js",
+    ],
   },
   {
     id: 4,
@@ -130,7 +143,14 @@ const projects = [
     image: "/public/boolflix-cop.jpeg",
     video: "/public/video-boolflix.mp4",
     repository: "https://github.com/Stefanospedicato/react-boolflix",
-    technologies: ["Express.js", "Node.js", "CSS", "Bootstrap", "React.js"],
+    technologies: [
+      "Express.js",
+      "Node.js",
+      "CSS",
+      "Bootstrap",
+      "Vite",
+      "React.js",
+    ],
   },
 ];
 

@@ -1,6 +1,6 @@
 const ImageSection = () => {
   return (
-    <div className="w-full xl:w-[50%] h-screen flex items-center justify-center xl:block hidden">
+    <div className="w-full xl:w-[50%] h-screen items-center justify-center xl:block hidden">
       <div className="w-full h-full overflow-hidden relative">
         <img
           src="/public/io-bn.jpg"

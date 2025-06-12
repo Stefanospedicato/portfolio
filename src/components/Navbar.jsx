@@ -16,7 +16,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded md:hidden hover:bg-black hover:text-white transition duration-500"
+          className="inline-flex items-center  w-10 h-10 justify-center text-sm text-black rounded md:hidden hover:bg-black hover:text-white transition duration-500"
           aria-controls="navbar-default"
           aria-expanded={isOpen}
         >

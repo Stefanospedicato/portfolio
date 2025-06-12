@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import DefaultLayout from "./layouts/DefaultLayout"
 import Homepage from "./pages/Homepage"
 import About from "./pages/About"
@@ -15,6 +15,7 @@ const App = () => {
           <Route path="/contatti" element={<Contacts />} />
           <Route path="/progetti" element={<Projects />} />
           <Route path="/progetti/:id" element={<ProjectDetail />} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Route>
       </Routes>
     </BrowserRouter>
@@ -22,3 +23,4 @@ const App = () => {
 }
 
 export default App
+
