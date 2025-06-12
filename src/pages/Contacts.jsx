@@ -44,7 +44,7 @@ const Contacts = () => {
                 transition={{ duration: 0.6, delay: contact.id * 0.1 }}
                 className="text-4xl text-gray-400 m-3 cursor-pointer contact-card p-5 border border-white hover:border-gray-800"
                 onClick={() => {
-                  if (contact.name === "Whatsapp e Cellulare") {
+                  if (contact.id === 4) {
                     window.open(`tel:${contact.contact}`);
                   } else if (contact.contact.startsWith("http")) {
                     window.open(contact.contact);
