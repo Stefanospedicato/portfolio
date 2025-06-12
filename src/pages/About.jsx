@@ -17,7 +17,7 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center xl:px-20"
+          className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center xl:px-20 xl:pt-40"
         >
           {/* Titolo */}
           <motion.p
