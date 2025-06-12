@@ -16,7 +16,7 @@ const ProjectDetail = () => {
 
   return (
     <div className="w-fullvxl:h-[1100px] flex items-center justify-center">
-      <section className="w-full flex flex-col xl:flex-row xl:justify-between min-h-screen pt-20 homepage-section gap-10 relative xl:pb-20">
+      <section className="w-full flex flex-col xl:flex-row xl:justify-between min-h-screen pt-20 homepage-section gap-10 relative pb-20">
         <ImageSection />
 
         <motion.div

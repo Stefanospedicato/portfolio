@@ -6,7 +6,7 @@ import RoundedImage from "../components/RoundedImage";
 const Homepage = () => {
   return (
     <div className="w-full  xl:h-[1100px] flex items-center justify-center">
-      <section className="w-full flex flex-col items-center justify-center min-h-screen pt-20 xl:flex-row xl:justify-between homepage-section gap-10 xl:pb-20">
+      <section className="w-full flex flex-col items-center justify-center min-h-screen  xl:flex-row xl:justify-between homepage-section gap-10 pb-20 pt-20">
         <ImageSection />
         <motion.div
           initial={{ opacity: 0, y: 50 }}

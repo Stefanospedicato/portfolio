@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <div className="w-full  xl:h-[1100px] flex items-center justify-center">
-      <section className="w-full flex flex-col xl:flex-row xl:justify-between min-h-screen homepage-section gap-10 relative">
+      <section className="w-full flex flex-col xl:flex-row xl:justify-between min-h-screen homepage-section gap-10 relative pt-20 pb-20">
         <ImageSection />
 
         <motion.div

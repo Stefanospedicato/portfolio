@@ -5,7 +5,7 @@ import { contacts } from "../data/data";
 const Contacts = () => {
   return (
     <div className="w-full xl:h-[1100px] flex items-center justify-center">
-      <section className="w-full flex flex-col xl:flex-row xl:justify-between min-h-screen pt-20 homepage-section gap-10 xl:pb-20 relative">
+      <section className="w-full flex flex-col xl:flex-row xl:justify-between min-h-screen pt-20 homepage-section gap-10 pb-20 relative">
         <ImageSection />
 
         <motion.div

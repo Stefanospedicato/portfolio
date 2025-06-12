@@ -25,7 +25,7 @@ export default function Navbar() {
         {/* Menu Navigazione */}
         <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-default">
           <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:border-0 md:bg-white md:space-x-2">
-            {["Home", "About", "Progetti", "Contatti"].map((item) => (
+            {["Home", "Storia", "Progetti", "Contatti"].map((item) => (
               <li key={item}>
                 <Link
                   to={`/${item.toLowerCase()}`}
