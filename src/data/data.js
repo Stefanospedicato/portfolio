@@ -54,10 +54,10 @@ const tech = [
 
 const contacts = [
   {
-    id: 1,
-    name: "Gmail",
-    contact: "stefano.spedicato11@gmail.com",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png",
+    id: 3,
+    name: "GitHub",
+    contact: "https://github.com/Stefanospedicato",
+    icon: "https://www.svgrepo.com/show/475654/github-color.svg",
   },
   {
     id: 2,
@@ -66,23 +66,72 @@ const contacts = [
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png",
   },
   {
+    id: 1,
+    name: "Gmail",
+    contact: "stefano.spedicato11@gmail.com",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png",
+  },
+  {
     id: 4,
-    name: "Whatsapp",
-    contact: "+393335694685",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png",
-  },
-  {
-    id: 3,
-    name: "GitHub",
-    contact: "https://github.com/Stefanospedicato",
-    icon: "https://www.svgrepo.com/show/475654/github-color.svg",
-  },
-  {
-    id: 5,
-    name: "Cellulare",
+    name: "Whatsapp e Cellulare",
     contact: "+393335694685",
     icon: "https://www.svgrepo.com/show/13641/phone-call.svg",
   },
 ];
 
-export { tech, contacts };
+const projects = [
+  {
+    id: 1,
+    name: "YourCars",
+    description:
+      "Per il progetto finale del corso di Boolean, ho sviluppato un portale dedicato alle automobili, permettendo la consultazione, la ricerca avanzata, il confronto tra modelli, il filtraggio e la creazione di nuovi record. Gli utenti possono esplorare i veicoli disponibili, aggiungerne di nuovi, comparare dati tecnici e salvare i modelli preferiti.",
+    logo: "",
+    image: "/public/yourcars-cop.jpeg",
+    video: "/public/video-yourcars.mp4",
+    repository:
+      "https://github.com/Stefanospedicato/progetto-finale-spec-repository-front",
+    technologies: ["CSS", "React.js", "Typescript"],
+  },
+  {
+    id: 2,
+    name: "BoolBnB",
+    description:
+      "Si tratta di un progetto di gruppo in collaborazione con Fabio Ferrero e Lucia Meneghin, dove abbiamo sviluppato un sito ispirato ad AirBnB per la ricerca di immobili, integrando un sistema di filtraggio e pagine di dettaglio per ogni annuncio. Gli host possono inserire le proprie proprietà nel portale, mentre gli utenti possono effettuare ricerche mirate e contattare direttamente gli host in caso di interesse. ",
+    logo: "",
+    image: "/public/boolbnb-cop.jpeg",
+    video: "/public/video-boolbnb.mp4",
+    repository: "https://github.com/fabioferrero90/boolbnb-repository-pw",
+    technologies: [
+      "Express.js",
+      "Node.js",
+      "CSS",
+      "MySQL",
+      "TailwindCSS",
+      "React.js",
+    ],
+  },
+  {
+    id: 3,
+    name: "Film Area",
+    description:
+      "Questo progetto offre un sito web che permette al cliente di sfogliare i propri titoli preferiti, aggiungerne di nuovi e di lasciare recensioni.",
+    logo: "",
+    image: "/public/filmarea-cop.jpeg",
+    video: "/public/video-filmarea.mp4",
+    repository: "https://github.com/Stefanospedicato/webapp-react",
+    technologies: ["Express.js", "Node.js", "CSS", "Bootstrap", "React.js"],
+  },
+  {
+    id: 4,
+    name: "Boolflix",
+    description:
+      "Questo progetto realizza un'interfaccia ispirata a Netflix, dove l'utente può cercare i suoi film e serie TV preferite e riceverne informazioni in merito.",
+    logo: "",
+    image: "/public/boolflix-cop.jpeg",
+    video: "/public/video-boolflix.mp4",
+    repository: "https://github.com/Stefanospedicato/react-boolflix",
+    technologies: ["Express.js", "Node.js", "CSS", "Bootstrap", "React.js"],
+  },
+];
+
+export { tech, contacts, projects };

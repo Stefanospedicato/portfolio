@@ -1,27 +1,54 @@
-import { Link } from "react-router-dom"
-import ImageSection from "../components/ImageSection"
-import RoundedImage from "../components/RoundedImage"
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import ImageSection from "../components/ImageSection";
+import RoundedImage from "../components/RoundedImage";
+
 const Homepage = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center min-h-screen pt-20 xl:flex-row xl:justify-between homepage-section gap-10 pb-28 lg:p-0">
+    <section className="w-full flex flex-col items-center justify-center min-h-screen pt-20 xl:flex-row xl:justify-between homepage-section gap-10 pb-28 lg:pt-20">
       <ImageSection />
-      <div className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center overflow-auto p-3">
-        <p className="text-8xl font-bold mb-10 xl:text-9xl flex-shrink-0">STEFANO SPEDICATO</p>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center  p-3 overflow-hidden">
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          className="text-8xl font-bold mb-10 xl:text-9xl flex-shrink-0">
+          STEFANO SPEDICATO
+        </motion.p>
         <RoundedImage />
-        <div className="mb-5">
-          <span className="text-4xl text-gray-400">I'm a Creative</span>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+          className="mb-5">
+          <span className="text-4xl text-gray-400">I'm a</span>
           <span className="text-4xl font-semibold"> Junior Developer</span>
-        </div>
-        <span className="block h-[10px] bg-black w-[100px] mb-5 transition-all duration-500 ease-in-out hover:w-[500px] rounded mx-auto"></span>
-        <div className="w-full max-w-md">
+        </motion.div>
+        <motion.span
+          initial={{ width: "100px" }}
+          whileHover={{ width: "500px" }}
+          transition={{ duration: 0.5 }}
+          className="block h-[10px] bg-black w-[100px] mb-5 rounded mx-auto">
+        </motion.span>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.7 }}
+          className="w-full max-w-md">
           <Link to={"/about"}><button className="cool-button mt-10 w-full">INFO</button></Link>
           <Link to={"/progetti"}><button className="cool-button mt-10 w-full">PROGETTI</button></Link>
           <Link to={"/contatti"}><button className="cool-button mt-10 w-full">CONTATTAMI</button></Link>
-        </div>
-      </div>
+          <button className="cool-button mt-10 w-full">
+            <a href="/Stefano.Spedicato.pdf" className="w-full h-full block">VISUALIZZA CV</a>
+          </button>
+        </motion.div>
+      </motion.div>
     </section>
+  );
+};
 
-  )
-}
-
-export default Homepage
+export default Homepage;
