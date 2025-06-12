@@ -46,9 +46,9 @@ const Homepage = () => {
           >
             <Link to={"/storia"}><button className="cool-button mt-10 w-full">INFO</button></Link>
             <Link to={"/progetti"}><button className="cool-button mt-10 w-full">PROGETTI</button></Link>
-            <Link to={"/contatti"}><button className="cool-button mt-10 w-full">CONTATTAMI</button></Link>
+            <Link to={"/contatti"}><button className="cool-button mt-10 w-full">CONTATTI</button></Link>
             <button className="cool-button mt-10 w-full">
-              <a href="/Stefano.Spedicato.pdf" className="w-full h-full block">VISUALIZZA CV</a>
+              <a href="/Stefano.Spedicato.pdf" className="w-full h-full block">CV</a>
             </button>
           </motion.div>
         </motion.div>
