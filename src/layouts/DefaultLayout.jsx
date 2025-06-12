@@ -4,7 +4,7 @@ import Footer from "../components/Footer"
 const DefaultLayout = () => {
   return (
     <>
-      <header className="pb-28">
+      <header className="xl:pb-28">
         <Navbar />
       </header>
       <main>

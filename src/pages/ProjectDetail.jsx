@@ -16,7 +16,7 @@ const ProjectDetail = () => {
 
   return (
     <div className="w-fullvxl:h-[1100px] flex items-center justify-center">
-      <section className="w-full flex flex-col xl:flex-row xl:justify-between min-h-screen pt-20 homepage-section gap-10 relative pb-20">
+      <section className="w-full flex flex-col xl:flex-row xl:justify-between min-h-screen pt-20 homepage-section gap-10 relative xl:pb-20">
         <ImageSection />
 
         <motion.div
@@ -25,7 +25,7 @@ const ProjectDetail = () => {
           transition={{ duration: 1 }}
           className="w-full flex flex-col items-center text-center xl:w-[50%] justify-start xl:mr-10"
         >
-          <p className="text-7xl font-bold mb-10 xl:text-8xl uppercase">{project.name}</p>
+          <p className="text-4xl font-bold mb-10 xl:text-8xl uppercase">{project.name}</p>
 
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}

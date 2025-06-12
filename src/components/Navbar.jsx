@@ -29,11 +29,12 @@ export default function Navbar() {
               <li key={item}>
                 <Link
                   to={`/${item.toLowerCase()}`}
-                  className="relative block py-2 px-4 text-black mb-3 md:mb-0 rounded-sm 
-          before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:bg-black 
-          before:transition-all before:duration-700 before:ease-in-out hover:before:w-full 
-          hover:text-white uppercase transition duration-500 ease-in-out"
-                  onClick={() => setIsOpen(false)}>
+                  className={
+                    "relative block py-2 px-4 text-black mb-3 md:mb-0 rounded-sm " +
+                    (isOpen ? "hover:bg-black hover:text-white transition duration-300" : "before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-700 before:ease-in-out hover:before:w-full hover:text-white")
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
                   <span className="relative z-10">{item}</span>
                 </Link>
               </li>

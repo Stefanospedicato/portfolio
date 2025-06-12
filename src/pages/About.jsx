@@ -17,14 +17,14 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center px-20"
+          className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center xl:px-20"
         >
           {/* Titolo */}
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-            className="text-7xl font-bold mb-10 xl:text-8xl"
+            className="text-4xl font-bold mb-10 xl:text-8xl"
           >
             SU DI ME
           </motion.p>

@@ -16,7 +16,7 @@ const Projects = () => {
           transition={{ duration: 1 }}
           className="w-full flex flex-col items-center text-center xl:w-[50%] justify-start xl:mr-10"
         >
-          <p className="text-7xl font-bold mb-10 xl:text-8xl">PROGETTI</p>
+          <p className="text-4xl font-bold mb-10 xl:text-8xl">PROGETTI</p>
 
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
