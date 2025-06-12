@@ -43,7 +43,15 @@ const Contacts = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: contact.id * 0.1 }}
                 className="text-4xl text-gray-400 m-3 cursor-pointer contact-card p-5 border border-white hover:border-gray-800"
-                onClick={() => contact.contact.startsWith("http") ? window.open(contact.contact) : window.open(`mailto:${contact.contact}`)}
+                onClick={() => {
+                  if (contact.name === "Whatsapp e Cellulare") {
+                    window.open(`tel:${contact.contact}`);
+                  } else if (contact.contact.startsWith("http")) {
+                    window.open(contact.contact);
+                  } else {
+                    window.open(`mailto:${contact.contact}`);
+                  }
+                }}
               >
                 <div className="flex items-center justify-center mb-5">
                   <img className="w-[30px] mr-3" src={contact.icon} alt={contact.name} />
