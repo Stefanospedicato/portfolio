@@ -91,8 +91,8 @@ const projects = [
     description:
       "Per il progetto finale del corso di Boolean, ho sviluppato un portale dedicato alle automobili, permettendo la consultazione, la ricerca avanzata, il confronto tra modelli, il filtraggio e la creazione di nuovi record. Gli utenti possono esplorare i veicoli disponibili, aggiungerne di nuovi, comparare dati tecnici e salvare i modelli preferiti.",
     logo: "",
-    image: "/public/yourcars-cop.jpeg",
-    video: "/public/video-yourcars.mp4",
+    image: "/yourcars-cop.jpeg",
+    video: "/video-yourcars.mp4",
     repository:
       "https://github.com/Stefanospedicato/progetto-finale-spec-repository-front",
     technologies: ["CSS", "React.js", "Vite", "Typescript"],
@@ -103,8 +103,8 @@ const projects = [
     description:
       "Si tratta di un progetto di gruppo in collaborazione con Fabio Ferrero e Lucia Meneghin, dove abbiamo sviluppato un sito ispirato ad AirBnB per la ricerca di immobili, integrando un sistema di filtraggio e pagine di dettaglio per ogni annuncio. Gli host possono inserire le proprie proprietà nel portale, mentre gli utenti possono effettuare ricerche mirate e contattare direttamente gli host in caso di interesse. ",
     logo: "",
-    image: "/public/boolbnb-cop.jpeg",
-    video: "/public/video-boolbnb.mp4",
+    image: "/boolbnb-cop.jpeg",
+    video: "/video-boolbnb.mp4",
     repository: "https://github.com/fabioferrero90/boolbnb-repository-pw",
     technologies: [
       "Express.js",
@@ -122,8 +122,8 @@ const projects = [
     description:
       "Questo progetto offre un sito web che permette al cliente di sfogliare i propri titoli preferiti, aggiungerne di nuovi e di lasciare recensioni.",
     logo: "",
-    image: "/public/filmarea-cop.jpeg",
-    video: "/public/video-filmarea.mp4",
+    image: "/filmarea-cop.jpeg",
+    video: "/video-filmarea.mp4",
     repository: "https://github.com/Stefanospedicato/webapp-react",
     technologies: [
       "Express.js",
@@ -140,8 +140,8 @@ const projects = [
     description:
       "Questo progetto realizza un'interfaccia ispirata a Netflix, dove l'utente può cercare i suoi film e serie TV preferite e riceverne informazioni in merito.",
     logo: "",
-    image: "/public/boolflix-cop.jpeg",
-    video: "/public/video-boolflix.mp4",
+    image: "/boolflix-cop.jpeg",
+    video: "/video-boolflix.mp4",
     repository: "https://github.com/Stefanospedicato/react-boolflix",
     technologies: [
       "Express.js",
