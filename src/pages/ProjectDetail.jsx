@@ -36,6 +36,16 @@ const ProjectDetail = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
+            className="max-w-2xl mb-5"
+          >
+            <a href={project.repository} className="description hover:text-blue-400">"{project.repository}"</a>
+          </motion.div>
+
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
             className="max-w-2xl"
           >
             <p className="description ">"{project.description}"</p>
