@@ -30,8 +30,8 @@ const Homepage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
           className="my-10 xl:mb-5">
-          <span className="text-4xl text-gray-400">I'm a</span>
-          <span className="text-4xl font-semibold"> Junior Developer</span>
+          <span className="text-4xl text-gray-400">Junior</span>
+          <span className="text-4xl font-semibold"> Developer</span>
         </motion.div>
 
         <motion.div
@@ -39,7 +39,7 @@ const Homepage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.7 }}
           className="w-full max-w-md">
-          <Link to={"/storia"}><button className="cool-button mt-5 w-full">INFO</button></Link>
+          <Link to={"/storia"}><button className="cool-button mt-5 w-full">STORIA</button></Link>
           <Link to={"/progetti"}><button className="cool-button mt-5 w-full">PROGETTI</button></Link>
           <Link to={"/contatti"}><button className="cool-button mt-5 w-full">CONTATTI</button></Link>
           <button className="cool-button mt-5 w-full">

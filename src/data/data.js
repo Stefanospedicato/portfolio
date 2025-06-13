@@ -94,7 +94,7 @@ const projects = [
     image: "/yourcars-cop.jpeg",
     video: "/video-yourcars.mp4",
     repository:
-      "https://github.com/Stefanospedicato/progetto-finale-spec-repository-front",
+      "https://github.com/Stefanospedicato/progetto-finale-spec-frontend-front",
     technologies: ["CSS", "React.js", "Vite", "Typescript"],
   },
   {
@@ -105,7 +105,7 @@ const projects = [
     logo: "",
     image: "/boolbnb-cop.jpeg",
     video: "/video-boolbnb.mp4",
-    repository: "https://github.com/fabioferrero90/boolbnb-repository-pw",
+    repository: "https://github.com/fabioferrero90/boolbnb-frontend-pw",
     technologies: [
       "Express.js",
       "Node.js",
