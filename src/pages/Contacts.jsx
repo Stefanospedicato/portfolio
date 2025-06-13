@@ -12,7 +12,7 @@ const Contacts = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="w-full w-[50%] flex flex-col items-center text-center xl:mr-10 xl:pb-32"
+          className="w-[50%] flex flex-col items-center text-center xl:mr-10 xl:pb-32"
         >
           <motion.p
             initial={{ opacity: 0, y: 50 }}

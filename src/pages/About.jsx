@@ -1,38 +1,39 @@
 import { motion } from "framer-motion";
-import ImageSection from "../components/ImageSection";
+import Technologies from "../components/Technologies";
 import RoundedImage from "../components/RoundedImage";
-import { tech } from "../data/data";
+import SquareImage from "../components/SquareImage";
 
-// Componente About
 const About = () => {
   return (
-    <div className="w-full xl:h-[1100px] flex items-center justify-center">
-      <section className="w-full flex flex-col xl:flex-row xl:justify-between min-h-screen pt-20 homepage-section gap-10 relative pb-20">
+    <div className="w-full min-h-screen flex items-center justify-center">
+      <section className="w-full flex flex-col xl:flex-row xl:h-screen">
 
-        {/* Sezione Immagine */}
-        <ImageSection />
-
-        {/* Sezione Testo Animata */}
+        {/* Sezione Sinistra - Titolo e Immagine */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="w-full xl:w-[50%] flex flex-col items-center text-center justify-center xl:px-20 xl:pt-40 xl:relative xl:top-[-60px]"
+          className="w-full xl:w-1/2 flex flex-col items-center justify-center text-center pt-10 mt-20 xl:mt-0 xl:px-20"
         >
-          {/* Titolo */}
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-            className="text-4xl font-bold mb-10 xl:text-8xl"
+            className="text-4xl font-bold mb-10 xl:text-9xl xl:mb-20"
           >
             SU DI ME
           </motion.p>
-
-          {/* Immagine Rotonda */}
+          <SquareImage />
           <RoundedImage />
+        </motion.div>
 
-          {/* Descrizione Animata */}
+        {/* Sezione Destra - Descrizione e Carosello */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="w-full xl:w-1/2 flex flex-col justify-center items-center xl:px-20 text-center py-20"
+        >
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -50,33 +51,8 @@ const About = () => {
             </p>
           </motion.div>
 
-          {/* Linea Animata */}
-          <motion.span
-            initial={{ opacity: 0, width: "100px" }}
-            whileHover={{ width: "300px" }}
-            transition={{ duration: 0.5 }}
-            className="block h-[10px] bg-black w-[100px]  rounded mx-auto"
-          ></motion.span>
-
-          {/* Lista Tecnologie Animata */}
-          <motion.ul
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.9, ease: "easeOut" }}
-            className="flex flex-wrap justify-center"
-          >
-            {tech.map((item) => (
-              <motion.li
-                key={item.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: item.id * 0.1 }}
-                className="flex items-center gap-2 text-xl m-5"
-              >
-                {item.name} <img className="w-[40px]" src={item.icon} alt={item.name} />
-              </motion.li>
-            ))}
-          </motion.ul>
+          {/* Carosello */}
+          <Technologies />
         </motion.div>
       </section>
     </div>
