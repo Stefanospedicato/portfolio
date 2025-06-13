@@ -47,12 +47,3 @@
   font-style: italic;
   color: rgb(158, 158, 158);
 }
-
-.contact-card {
-  transition: all 0.2s ease-in-out;
-  border: 5px solid white;
-}
-
-.contact-card:hover {
-  border: 5px solid rgb(0, 0, 0);
-}
