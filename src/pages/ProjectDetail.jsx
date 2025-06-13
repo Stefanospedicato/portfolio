@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { tech, projects } from "../data/data";
 import { motion } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -38,7 +39,7 @@ const ProjectDetail = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="max-w-2xl mb-5"
           >
-            <a href={project.repository} target="_blank" rel="noopener noreferrer" className="description hover:text-blue-400">Repository in GitHub</a>
+            <a href={project.repository} target="_blank" rel="noopener noreferrer" className="repo-link">GitHub <FaExternalLinkAlt className="ml-2 w-4" /></a>
           </motion.div>
 
 

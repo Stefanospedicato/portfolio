@@ -2,23 +2,24 @@ import { motion } from "framer-motion";
 import { tech } from "../data/data";
 
 const Technologies = () => {
-  const multiTech = [...tech, ...tech, ...tech, ...tech, ...tech, ...tech];
+  const multiTech = [...tech, ...tech];
 
   return (
     <div className="overflow-hidden w-full">
       <motion.ul
         className="flex gap-5"
-        initial={{ x: "100%" }}
-        animate={{ x: "-100%" }}
+        initial={{ x: 0 }}
+        animate={{ x: "-50%" }}
         transition={{
-          duration: 10,
+          duration: 20,
           ease: "linear",
-          repeat: Infinity
+          repeat: Infinity,
         }}
+        style={{ width: "max-content" }}
       >
-        {multiTech.map((item) => (
+        {multiTech.map((item, index) => (
           <motion.li
-            key={item.id}
+            key={item.id + "-" + index}
             className="flex items-center gap-2 text-xl mr-16"
           >
             {item.name} <img className="w-[40px]" src={item.icon} alt={item.name} />
@@ -30,3 +31,4 @@ const Technologies = () => {
 };
 
 export default Technologies;
+

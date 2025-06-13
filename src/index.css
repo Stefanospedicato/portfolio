@@ -43,6 +43,21 @@
   font-style: italic;
 }
 
+.repo-link {
+  font-size: 1.3rem;
+  font-weight: 200;
+  text-decoration: underline;
+  line-height: 2rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-style: italic;
+  color: rgb(78, 185, 251);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact {
   font-style: italic;
   color: rgb(158, 158, 158);
