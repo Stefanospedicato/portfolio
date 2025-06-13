@@ -32,7 +32,7 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="w-full xl:w-1/2 flex flex-col justify-center items-center xl:px-20 text-center py-20"
+          className="w-full xl:w-1/2 flex flex-col justify-center items-center xl:px-20 text-center pb-20 pt-10"
         >
           <motion.div
             initial={{ opacity: 0, y: 50 }}
