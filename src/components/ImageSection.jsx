@@ -1,7 +1,7 @@
 const ImageSection = () => {
   return (
-    <div className="w-full xl:w-[50%] h-screen relative top-[-150px] hidden xl:block">
-      <div className="absolute inset-0 w-full h-full overflow-hidden">
+    <div className="w-full xl:w-1/2 xl:h-screen hidden xl:block relative">
+      <div className="absolute inset-0 w-full h-full">
         <img
           src="/io-bn.jpg"
           alt="io"
