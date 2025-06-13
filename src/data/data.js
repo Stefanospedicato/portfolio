@@ -144,7 +144,7 @@ const projects = [
     id: 4,
     name: "Boolflix",
     description:
-      "Questo progetto realizza un'interfaccia ispirata a Netflix, dove l'utente può cercare i suoi film e serie TV preferite e riceverne informazioni in merito.",
+      "Immergiti in un'avventura cinematografica con questo progetto ispirato a Netflix! Gli utenti possono esplorare un vasto catalogo di film e serie TV, scoprendo dettagli intriganti e recensioni appassionate. Grazie a Bootstrap, l'interfaccia offre un'esperienza visiva accattivante, mentre Express.js potenzia il back-end per una navigazione fluida e reattiva.",
     image: "/boolflix-cop.png",
     video: "/video-boolflix.mp4",
     repository: "https://github.com/Stefanospedicato/react-boolflix",
