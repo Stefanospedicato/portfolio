@@ -34,13 +34,6 @@ const Homepage = () => {
           <span className="text-4xl font-semibold"> Junior Developer</span>
         </motion.div>
 
-        <motion.span
-          initial={{ width: "100px" }}
-          whileHover={{ width: "500px" }}
-          transition={{ duration: 0.5 }}
-          className="block h-[10px] bg-black w-[100px] mb-5 rounded mx-auto">
-        </motion.span>
-
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
