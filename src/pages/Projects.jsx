@@ -42,7 +42,28 @@ const Projects = () => {
           transition={{ duration: 1, delay: 0.6 }}
           className="flex flex-wrap justify-center mt-10  w-full px-5"
         >
-          {projects.map((project, index) => (<motion.div key={project.id} initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: index * 0.15 }} className="w-full p-3 md:w-1/2 md:p-10" > <Link to={`/progetti/${project.id}`} className="block"> <div className="project-card flex flex-col items-center cursor-pointer transition duration-500 overflow-hidden"> <div className="w-full h-[200px] overflow-hidden flex items-center justify-center"> <img className="object-cover w-full mb-3 hover:scale-110 transition duration-500" src={project.image} alt={project.name} /> </div> <h2 className="text-lg mb-5 pt-1">{project.name}</h2> </div> </Link> </motion.div>))}
+          {projects.sort((a, b) => a.id - b.id).map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              className="w-full p-3 md:w-1/2 md:p-10"
+            >
+              <Link to={`/progetti/${project.id}`} className="block">
+                <div className="flex flex-col items-center cursor-pointer transition duration-500 overflow-hidden">
+                  <div className="w-full h-[200px] overflow-hidden flex items-center justify-center">
+                    <img
+                      className="object-cover w-full hover:scale-110 transition duration-500"
+                      src={project.image}
+                      alt={project.name}
+                    />
+                  </div>
+                  <h2 className="text-lg mb-5 pt-1">{project.name}</h2>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
         </motion.div>
       </section>
     </div>
