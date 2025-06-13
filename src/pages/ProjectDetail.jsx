@@ -38,7 +38,7 @@ const ProjectDetail = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="max-w-2xl mb-5"
           >
-            <a href={project.repository} target="_blank" rel="noopener noreferrer" className="description hover:text-blue-400">"{project.repository}"</a>
+            <a href={project.repository} target="_blank" rel="noopener noreferrer" className="description hover:text-blue-400">Repository in GitHub</a>
           </motion.div>
 
 
