@@ -72,13 +72,13 @@ const contacts = [
   },
   {
     id: 1,
-    name: "Gmail",
+    name: "Email",
     contact: "stefano.spedicato11@gmail.com",
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png",
   },
   {
     id: 4,
-    name: "Whatsapp e Cellulare",
+    name: "Cellulare",
     contact: "+393335694685",
     icon: "https://www.svgrepo.com/show/13641/phone-call.svg",
   },

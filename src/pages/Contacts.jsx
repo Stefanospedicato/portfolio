@@ -40,7 +40,7 @@ const Contacts = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: contact.id * 0.1 }}
-              className="text-4xl text-gray-400 m-3 cursor-pointer contact-card p-5 text-center"
+              className="text-4xl text-gray-400 m-3 cursor-pointer contact-card p-5"
               onClick={() => {
                 if (contact.id === 4) {
                   window.open(`tel:${contact.contact}`);
@@ -51,7 +51,7 @@ const Contacts = () => {
                 }
               }}
             >
-              <div className="flex items-center justify-center mb-5 text-center">
+              <div className="flex items-center justify-center mb-5">
                 <img className="w-[30px] mr-3" src={contact.icon} alt={contact.name} />
                 <span className="text-center">{contact.name}</span>
               </div>
