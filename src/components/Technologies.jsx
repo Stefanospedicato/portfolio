@@ -5,7 +5,7 @@ const Technologies = () => {
   const multiTech = [...tech, ...tech];
 
   return (
-    <div className="overflow-hidden w-full">
+    <div className="overflow-hidden w-full mt-10 xl:mt-0">
       <motion.ul
         className="flex gap-5"
         initial={{ x: 0 }}
