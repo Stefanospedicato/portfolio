@@ -42,11 +42,8 @@ const Homepage = () => {
           <Link to={"/storia"}><button className="cool-button mt-5 w-full">STORIA</button></Link>
           <Link to={"/progetti"}><button className="cool-button mt-5 w-full">PROGETTI</button></Link>
           <Link to={"/contatti"}><button className="cool-button mt-5 w-full">CONTATTI</button></Link>
-          <button className="cool-button mt-5 w-full">
-            <a href="/Stefano.Spedicato.pdf" className="w-full h-full block">CV</a>
-          </button>
+          <Link to={"/stefano.spedicato.pdf"} target="_blank" rel="noopener noreferrer"><button className="cool-button mt-5 w-full">CV</button></Link>
         </motion.div>
-
       </motion.div>
     </section>
 
