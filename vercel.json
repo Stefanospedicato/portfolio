@@ -1,6 +1,8 @@
 {
   "rewrites": [
-    { "source": "/stefano.spedicato.pdf", "destination": "/stefano.spedicato.pdf" },
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/((?!.*\\.(?:js|css|svg|png|jpg|jpeg|gif|pdf|ico|txt|woff2?|ttf|eot)).*)",
+      "destination": "/"
+    }
   ]
 }
