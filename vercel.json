@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/stefano.spedicato.pdf", "destination": "/stefano.spedicato.pdf" },
     { "source": "/(.*)", "destination": "/" }
   ]
 }
